@@ -13,6 +13,9 @@ ghosts = [
     [vector(100, 160), vector(0, -5), "red"],
     [vector(100, -160), vector(-5, 0), "purple"],
 ]
+
+# game baord
+
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,
@@ -95,6 +98,7 @@ def move():
 
     clear()
 
+    #packmans movemen
     if valid(pacman + aim):
         pacman.move(aim)
 
@@ -111,6 +115,8 @@ def move():
     goto(pacman.x + 10, pacman.y + 10)
     dot(20, 'yellow')
 
+
+# Movements of Ghosts
     for point, course, color in ghosts:
         if valid(point + course):
             point.move(course)
