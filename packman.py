@@ -122,9 +122,6 @@ def move():
             point.move(course)
         else:
 
-            print("pacman loc: " + str(pacman.x))
-            print(color + "ghost loc: " + str(point.x))
-
             if pacman.x > point.x  and pacman.y > point.y:
                 options = [
                     vector(0,5),
@@ -173,8 +170,6 @@ def move():
                     vector(0, 5),
                     vector(0, -5),
                 ]
-
-            print(options)
 
             plan = choice(options)
             course.x = plan.x
