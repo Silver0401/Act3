@@ -4,7 +4,7 @@ Un juego de packman
 
 ## Instalacion
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install freegames.
 
 ```bash
  python3 -m pip install freegames
@@ -20,7 +20,7 @@ from freegames import floor, vector
 
 ## Como jugar
 ```
-Utilizar las flechas del teclado para moverte 
+Utilizar las flechas del teclado para moverte
 ```
 ## Contribuyentes
 ```
